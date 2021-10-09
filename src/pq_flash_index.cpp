@@ -638,7 +638,7 @@ namespace diskann {
     size_t expected_file_size;
     READ_U64(index_metadata, expected_file_size);
     if (actual_index_size != expected_file_size) {
-      diskann::cout << "File size mismatch for " << disk_index_file
+      diskann::cout << "HERE!!File size mismatch for " << disk_index_file
                     << " (size: " << actual_index_size << ")"
                     << " with meta-data size: " << expected_file_size
                     << std::endl;
